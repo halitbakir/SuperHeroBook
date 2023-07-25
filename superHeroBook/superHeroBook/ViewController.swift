@@ -8,12 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    //import gibi tableview kullanabilmek için son 2ye o yapılar eklenmeli
     
     @IBOutlet weak var tableView: UITableView!
     
     var superKahramanGorselIsimleri = [String]()
-    var superKahramanIsimleri = [String]() //boş string dizi oluşturma
+    var superKahramanIsimleri = [String]() 
     var secilenIsim = ""
     var secilenGorsel = ""
     
