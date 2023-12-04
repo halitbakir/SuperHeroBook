@@ -63,20 +63,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    //tableviewde kullanılacak zorunlu yapı 1: kaç satır olacağı
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return superKahramanIsimleri.count //dizide kaç eleman varsa o kadar satır oluştur dedik
+        return superKahramanIsimleri.count 
         
     }
     
-    //tableviewde kullanılacak zorunlu yapı 2: hücre yapısını belirtir
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = superKahramanIsimleri[indexPath.row] //satırlara dizideki eleman isimlerini yazdırma
+        cell.textLabel?.text = superKahramanIsimleri[indexPath.row] 
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { //tıklanınca vc gitmek için
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { 
         secilenIsim = superKahramanIsimleri[indexPath.row]
         secilenGorsel = superKahramanGorselIsimleri[indexPath.row]
         
